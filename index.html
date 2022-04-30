@@ -6,18 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tappyType</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="modebar">
-      <button>Click me</button>
+    <div id="topdiv">
+      <div id="titlediv">
+        <h1 id="title">tappytype</h1>
+      </div>
+      <div id="wordcountdiv">
+        <button class="wordcountbtn">1</button>
+        <button class="wordcountbtn">5</button>
+        <button class="wordcountbtn" id="default">10</button>
+        <button class="wordcountbtn">20</button>
+        <button class="wordcountbtn">30</button>
+        <button class="wordcountbtn">quote</button>
+      </div>
     </div>
-    <div id="textdiv"></div>
-    <br />
-    <textarea name="typehere" id="type"></textarea>
-    <h1 id="timer">0.00 sec</h1>
-    <h1 id="wpm">0 wpm</h1>
-    <button id="resetbtn">Reset test</button>
 
+    <div id="testdiv">
+      <div id="centerpromptdiv">
+        <div id="promptdiv"></div>
+      </div>
+      <br />
+      <textarea
+        id="typeinput"
+        oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
+        onpaste="false"
+        spellcheck="false"
+      ></textarea>
+      <h1 id="timeoutput">0.00 sec</h1>
+      <h1 id="wpmoutput">0 wpm</h1>
+      <button id="resetbtn">reset</button>
+      <h2>esc or tab to reset</h2>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

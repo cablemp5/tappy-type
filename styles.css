@@ -1,39 +1,124 @@
 body {
   text-align: center;
+  font-family: "Manrope", sans-serif;
+  /* background-image: linear-gradient(to bottom right, rgb(31, 41, 71), rgb(25, 35, 63)); */
+  background-color: rgb(31, 41, 71);
+  color: lightslategray;
+}
+
+h1 {
+  font-weight: 800;
+  margin: 0;
+  color: rgb(109, 209, 139);
+}
+
+h2 {
+  font-weight: 400;
 }
 
 textarea {
-  height: 8rem;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
+  height: auto;
+  font-family: "Manrope", sans-serif;
+  width: 70%;
+
+  background-color: transparent;
   outline: none;
-  border: solid black 0.1rem;
+  border: solid white 0.2rem;
   padding: 1rem 2rem;
-  border-radius: 8rem;
+  border-radius: 3rem;
   font-size: 2rem;
   white-space: normal;
-  text-align: justify;
+  text-align: center;
   -moz-text-align-last: center;
   text-align-last: center;
   resize: none;
+  margin-bottom: 1rem;
+  color: lightslategray;
 }
 
 span {
   font-size: 2rem;
+  font-weight: 700;
 }
 
-#modebar {
+#resetbtn {
+  font-family: "Manrope", sans-serif;
+  width: 8rem;
+  height: 3rem;
+  margin-top: 1rem;
+  border-radius: 3rem;
+  background-color: transparent;
+  border: solid 0.2rem white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0;
+}
+
+#resetbtn:hover {
+  background-color: rgb(49, 61, 97);
+}
+
+#resetbtn:active {
+  background-color: rgb(23, 32, 58);
+}
+
+#topdiv {
+  margin-right: 1rem;
+}
+
+.wordcountbtn {
+  width: auto;
+  height: auto;
+  border: none;
+  margin: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: rgb(211, 211, 211);
+  padding-right: 0;
+}
+
+#wordcountdiv {
+  margin-bottom: 5rem;
   text-align: right;
-  margin-bottom: 2rem;
+  width: auto;
+  height: 0.5rem;
+  border: none;
+  margin-right: 0rem;
+  padding: 0rem;
+  background-color: none;
 }
 
-button {
-  border: none;
-  outline: none;
+.wordcountbtn:hover {
+  color: rgb(180, 230, 195) !important;
 }
 
-button:focus {
-  border: none;
-  outline: none;
+#name {
+  margin-bottom: 0;
+}
+
+/* #textdiv {
+  width:90%;
+} */
+
+#centerpromptdiv {
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#testdiv {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+#titlediv {
+  text-align: right;
+}
+
+#default {
+  color: rgb(109, 209, 139);
 }
