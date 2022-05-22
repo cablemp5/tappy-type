@@ -518,7 +518,7 @@ function createword() {
 
   if (isNaN(numwords)) {
     line =
-      "I can't do api requests using online editor haha. I spent 30 minutes trying to figure out what the fuck was wrong for no reason lfg.";
+      "i havent done this yet lol";
   } else {
     for (let i = 0; i < numwords; i++) {
       line += wordbank[Math.floor(Math.random() * wordbank.length)] + " ";
